@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Book Library</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -40,38 +40,25 @@
             <p id="read">read ?</p>
           </div>
         </div>
-        <div class="card">
-          <div class="title">
-            <h2 id="title"></h2>
-            <p id="author">written by author</p>
-          </div>
-          <div class="pages">
-            <p id="pages">number of pages</p>
-            <p id="read">read ?</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="title">
-            <h2 id="title"></h2>
-            <p id="author">written by author</p>
-          </div>
-          <div class="pages">
-            <p id="pages">number of pages</p>
-            <p id="read">read ?</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="title">
-            <h2 id="title"></h2>
-            <p id="author">written by author</p>
-          </div>
-          <div class="pages">
-            <p id="pages">number of pages</p>
-            <p id="read">read ?</p>
-          </div>
-        </div>
+      </div>
+      <div class="btn">
+        <button>Add New Book</button>
       </div>
     </main>
+    <form hidden class="form" action="">
+      <div class="form-container">
+        <label for="newTitle">Title</label>
+        <input type="text" name="" id="newTitle" />
+        <label for="newAuthor">Author</label>
+        <input type="text" name="" id="newAuthor" />
+        <label for="newPages">Pages</label>
+        <input type="number" name="" id="newPages" />
+        <label for="newRead">Read?</label>
+        <input type="checkbox" name="" id="newRead" />
+        <button class="add" type="submit">Add Book</button>
+      </div>
+    </form>
+
     <script src="script.js"></script>
   </body>
 </html>
